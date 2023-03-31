@@ -3,9 +3,10 @@
 // @version      0
 // @description  Simplify UI of bibibili.com
 // @author       Kervyn
+// @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/main.user.js
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
 // @run-at       document-start
 // @match        *://*.bilibili.com/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
 // @grant        GM_addStyle
 // ==/UserScript==
 
