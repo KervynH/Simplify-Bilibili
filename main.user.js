@@ -26,7 +26,7 @@ const elements = [
   // 多余的导航键 
   // "ul.left-entry>li.nav-link-item:nth-of-type(n+5)",
   // "ul.left-entry>li.v-popover-wrap:nth-of-type(n+5)",
-  
+
   // 右侧导航栏大会员按键
   ".right-entry--vip.right-entry__outside",
 
@@ -37,7 +37,7 @@ const elements = [
   ".bpx-player-ending-related",
 
   // 动态页面左右侧边栏 
-  "aside.right", 
+  "aside.right",
   "aside.left",
 
   // 发布动态的输入框 
@@ -45,8 +45,8 @@ const elements = [
 ];
 
 elements.forEach(e => {
-  GM_addStyle(`${e} {display: none !important}`)
-})
+  GM_addStyle(`${e} {display: none !important}`);
+});
 
 
 ///// Static Settings /////
@@ -60,21 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 ///// Dynamic Settings //////
-// setInterval(() => {
-//   // 移除搜索框预设搜索词
-//   document.querySelector('input.nav-search-input')?.removeAttribute('placeholder');
+const enableDynamicSettings = true;
 
-//   // 替换 logo 链接到动态首页
-//   const logoLink = document.querySelector('li.v-popover-wrap > a');
-//   if (logoLink) logoLink.href = 'https://t.bilibili.com/';
+if (enableDynamicSettings) setInterval(() => {
+  // 移除搜索框预设搜索词
+  document.querySelector('input.nav-search-input')?.removeAttribute('placeholder');
 
-//   // 重定向首页
-//   if (location.href == 'https://www.bilibili.com/') location.replace('https://t.bilibili.com/');
+  // 替换 logo 链接到动态首页
+  const logoLink = document.querySelector('li.v-popover-wrap > a');
+  if (logoLink) logoLink.href = 'https://t.bilibili.com/';
 
-//   // 直播自动网页全屏
-//   if (location.href.startsWith('https://live.bilibili.com')) {
-//     const body = document.querySelector("body");
-//     body.classList.add('player-full-win');
-//     body.classList.add('over-hidden');
-//   }
-// }, 50);
+  // 重定向首页
+  if (location.href == 'https://www.bilibili.com/') location.replace('https://t.bilibili.com/');
+
+  // 直播自动网页全屏
+  if (location.href.startsWith('https://live.bilibili.com')) {
+    const body = document.querySelector("body");
+    body.classList.add('player-full-win');
+    body.classList.add('over-hidden');
+  }
+}, 50);
