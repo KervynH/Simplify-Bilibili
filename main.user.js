@@ -24,8 +24,10 @@ const elements = [
   ".download-client-trigger.link",
 
   // 多余的导航键 
-  "ul.left-entry>li.nav-link-item:nth-of-type(n+5)",
-  "ul.left-entry>li.v-popover-wrap:nth-of-type(n+5)",
+  // "ul.left-entry>li.nav-link-item:nth-of-type(n+5)",
+  // "ul.left-entry>li.v-popover-wrap:nth-of-type(n+5)",
+  
+  // 右侧导航栏大会员按键
   ".right-entry--vip.right-entry__outside",
 
   // 播放页面右侧栏
