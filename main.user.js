@@ -34,6 +34,10 @@
 
     // 右侧导航栏大会员按键
     ".right-entry--vip.right-entry__outside",
+    
+    // 播放页面右侧栏中的推荐视频
+    ".recommend-list-v1",
+    ".part-undefined.pop-live-small-mode",
 
     // 播放页面的整个右侧栏
     // ".is-in-large-ab.right-container",
