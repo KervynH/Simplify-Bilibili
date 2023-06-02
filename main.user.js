@@ -64,7 +64,7 @@
     }
 
     // 重定向首页
-    if (location.pathname == '/') {
+    if (location.href == 'https://www.bilibili.com/') {
       location.replace('https://t.bilibili.com/');
     }
 
