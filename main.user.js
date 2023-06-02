@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Simplify Bilibili
 // @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/main.user.js
-// @version      0.1
+// @version      0.2
 // @description  Simplify UI of bilibili.com
 // @author       Kervyn
 // @run-at       document-start
@@ -12,7 +12,6 @@
 
 (function () {
   'use strict';
-
 
   // 需要隐藏的页面元素
   const blockList = [
@@ -34,10 +33,6 @@
 
     // 右侧导航栏大会员按键
     ".right-entry--vip.right-entry__outside",
-    
-    // 播放页面右侧栏中的推荐视频
-    ".recommend-list-v1",
-    ".part-undefined.pop-live-small-mode",
 
     // 播放页面的整个右侧栏
     // ".is-in-large-ab.right-container",
@@ -62,14 +57,14 @@
   // Static Settings
   document.addEventListener('DOMContentLoaded', () => {
     // 禁用自动播放
-    if (location.href.includes('//www.bilibili.com/video')) {
+    if (location.pathname.startsWith('/video')) {
       const playNextSpan = document.querySelector('span.next-button');
       const playNextButton = playNextSpan.querySelector('span.switch-button');
       playNextButton.classList.remove('on');
     }
 
     // 重定向首页
-    if (location.href == 'https://www.bilibili.com/') {
+    if (location.pathname == '/') {
       location.replace('https://t.bilibili.com/');
     }
 
