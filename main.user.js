@@ -22,6 +22,9 @@
     // 热搜
     ".trending",
 
+    // 首页推荐
+    ".feed2",
+
     // 下载客户端按键
     ".download-client-trigger.download-entry",
     ".download-client-trigger.link",
