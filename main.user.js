@@ -7,7 +7,7 @@
 // @run-at       document-start
 // @match        *://*.bilibili.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
-// @grant        GM_addStyle
+// @grant        GM.addStyle
 // ==/UserScript==
 
 (function () {
@@ -53,7 +53,7 @@
 
   // 用 CSS 隐藏多余的页面元素
   blockList.forEach(e => {
-    GM_addStyle(`${e} {display: none !important}`);
+    GM.addStyle(`${e} {display: none !important}`);
   });
 
 
