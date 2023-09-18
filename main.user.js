@@ -13,7 +13,7 @@
 'use strict';
 
 // 需要隐藏的页面元素
-const blockList = [
+const BLOCK_LIST = [
   // 广告
   ".scroll-sticky.right-container-inner > .ad-floor-exp.ad-report",
   ".part-undefined.report-scroll-module.report-wrap-module.pop-live-small-mode",
@@ -51,7 +51,7 @@ const blockList = [
 ];
 
 // 用 CSS 隐藏多余的页面元素
-blockList.forEach(e => {
+BLOCK_LIST.forEach(e => {
   GM.addStyle(`${e} {display: none !important}`);
 });
 
@@ -62,4 +62,4 @@ document.addEventListener('DOMContentLoaded', () => {
   if (location.href == 'https://www.bilibili.com/') {
     location.replace('https://t.bilibili.com/');
   }
-})
+});
