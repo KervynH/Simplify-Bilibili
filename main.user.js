@@ -39,6 +39,9 @@ const BLOCK_LIST = [
   // 播放页面的整个右侧栏
   // ".is-in-large-ab.right-container",
 
+  // 播放界面推荐直播
+  ".part-undefined.pop-live-small-mode",
+
   // 播放结束后播放器内部推荐视频
   ".bpx-player-ending-related",
 
