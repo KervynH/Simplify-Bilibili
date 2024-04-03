@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Simplify Bilibili
 // @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/main.user.js
-// @version      0.3
+// @version      2024-04-03
 // @description  Simplify UI of bilibili.com
 // @author       Kervyn
 // @run-at       document-start
@@ -56,13 +56,4 @@ const BLOCK_LIST = [
 // 用 CSS 隐藏多余的页面元素
 BLOCK_LIST.forEach(e => {
   GM.addStyle(`${e} {display: none !important}`);
-});
-
-
-// Static Settings
-document.addEventListener('DOMContentLoaded', () => {
-  // 重定向首页到动态
-  if (location.href == 'https://www.bilibili.com/') {
-    location.replace('https://t.bilibili.com/');
-  }
 });
