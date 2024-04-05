@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Simplify Bilibili
-// @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/main.user.js
+// @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/simplify-bilibili.user.js
 // @version      2024-04-03
 // @description  Simplify UI of bilibili.com
 // @author       Kervyn
