@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Simplify Bilibili
 // @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/simplify-bilibili.user.js
-// @version      2024-04-03
+// @version      2024-04-06
 // @description  Simplify UI of bilibili.com
 // @author       Kervyn
 // @run-at       document-start
@@ -17,6 +17,7 @@ const BLOCK_LIST = [
   // 广告
   ".scroll-sticky.right-container-inner > .ad-floor-exp.ad-report",
   ".part-undefined.report-scroll-module.report-wrap-module.pop-live-small-mode",
+  ".adblock-tips",
 
   // 热搜
   ".trending",
@@ -28,18 +29,19 @@ const BLOCK_LIST = [
   ".download-client-trigger.download-entry",
   ".download-client-trigger.link",
 
-  // 多余的导航键
+  // 顶栏左侧导航键
   "ul.left-entry > li.nav-link-item:nth-of-type(n+2)",
   "ul.left-entry > li.v-popover-wrap:nth-of-type(n+2)",
   "div.mini-header__title",
 
-  // 右侧导航栏大会员按键
-  ".right-entry--vip.right-entry__outside",
+  // 顶栏右侧大会员按键
+  ".vip-wrap",
 
   // 播放页面的整个右侧栏
   // ".is-in-large-ab.right-container",
 
-  // 播放界面推荐直播
+  // 播放页面推荐内容
+  ".recommend-list-v1",
   ".part-undefined.pop-live-small-mode",
 
   // 播放结束后播放器内部推荐视频
