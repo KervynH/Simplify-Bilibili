@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Simplify Bilibili
 // @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/simplify-bilibili.user.js
-// @version      2024-04-06
+// @version      2024-04-10
 // @description  Simplify UI of bilibili.com
 // @author       Kervyn
 // @run-at       document-start
@@ -40,9 +40,12 @@ const BLOCK_LIST = [
   // 播放页面的整个右侧栏
   // ".is-in-large-ab.right-container",
 
-  // 播放页面推荐内容
+  // 播放页面推荐视频
   ".recommend-list-v1",
+
+  // 播放页面广告
   ".part-undefined.pop-live-small-mode",
+  "div.ad-floor-cover",
 
   // 播放结束后播放器内部推荐视频
   ".bpx-player-ending-related",
