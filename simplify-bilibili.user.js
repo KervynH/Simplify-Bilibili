@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Simplify Bilibili
 // @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/simplify-bilibili.user.js
-// @version      2024-04-10
+// @version      2024-05-01
 // @description  Simplify UI of bilibili.com
 // @author       Kervyn
 // @run-at       document-start
@@ -15,8 +15,7 @@
 // 需要隐藏的页面元素
 const BLOCK_LIST = [
   // 广告
-  ".scroll-sticky.right-container-inner > .ad-floor-exp.ad-report",
-  ".part-undefined.report-scroll-module.report-wrap-module.pop-live-small-mode",
+  ".ad-report",
   ".adblock-tips",
 
   // 热搜
@@ -44,7 +43,7 @@ const BLOCK_LIST = [
   ".recommend-list-v1",
 
   // 播放页面广告
-  ".part-undefined.pop-live-small-mode",
+  ".pop-live-small-mode",
   "div.ad-floor-cover",
 
   // 播放结束后播放器内部推荐视频
