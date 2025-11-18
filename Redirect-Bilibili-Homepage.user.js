@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redirect Bilibili Homepage
 // @description  重定向哔哩哔哩首页
-// @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/redirect-bilibili-homepage.user.js
+// @namespace    https://raw.githubusercontent.com/KervynH/Simplify-Bilibili/refs/heads/main/redirect-bilibili-homepage.user.js
 // @match        https://www.bilibili.com/
 // @match        https://www.bilibili.com/?*
 // @run-at       document-start
