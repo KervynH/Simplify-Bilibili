@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Bilibili Auto Wide Screen
-// @namespace    https://github.com/KervynH/Simplify-Bilibili/raw/main/auto-wide-screen.user.js
+// @namespace    https://raw.githubusercontent.com/KervynH/Simplify-Bilibili/refs/heads/main/Auto-Wide-Screen.user.js
 // @description  打开视频页面自动切换宽屏播放器
 // @match        https://www.bilibili.com/video/*
 // @run-at       document-idle
